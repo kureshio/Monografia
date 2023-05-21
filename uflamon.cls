@@ -746,7 +746,7 @@
     {\flushleft
         \ifthenelse{\equal{\@defesa}{\@empty}}% % se não existir data de defesa
         {}%                                     % não produza nada
-        {APROVADA em \@defesa. \\}%   % caso contrario, escreva-a
+        {\textunderscore \textunderscore \textunderscore \textunderscore \textunderscore \textunderscore \textunderscore \textunderscore \textunderscore \textunderscore \textunderscore \textunderscore em \@defesa. \\}%   % caso contrario, escreva-a
         
         \vspace{1.2cm}
         
