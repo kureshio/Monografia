@@ -1,0 +1,105 @@
+RESULTADO DO DIÂMETRO
+------------------------------------------------------------------------
+Quadro da analise de variancia
+------------------------------------------------------------------------
+           GL     SQ     QM      Fc   Pr>Fc
+Tratamento  6  7.037 1.1729 0.57393 0.74831
+Residuo    35 71.527 2.0436                
+Total      41 78.565                       
+------------------------------------------------------------------------
+CV = 16.45 %
+
+------------------------------------------------------------------------
+Teste de normalidade dos residuos ( Shapiro-Wilk ) 
+Valor-p:  0.6515778 
+De acordo com o teste de Shapiro-Wilk a 5% de significancia, os residuos podem ser considerados normais.
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Teste de homogeneidade de variancia 
+valor-p:  0.1023383 
+De acordo com o teste de bartlett a 5% de significancia, as variancias podem ser consideradas homogeneas.
+------------------------------------------------------------------------
+
+De acordo com o teste F, as medias nao podem ser consideradas diferentes.
+------------------------------------------------------------------------
+  Niveis   Medias
+1      1 8.864167
+2      2 9.121500
+3      3 8.536500
+4      4 9.158167
+5      5 8.736667
+6      6 8.560167
+7      7 7.856574
+------------------------------------------------------------------------
+
+RESULTADO DA ALTURA
+
+------------------------------------------------------------------------
+Quadro da analise de variancia
+------------------------------------------------------------------------
+           GL     SQ     QM      Fc   Pr>Fc
+Tratamento  6  11.63 1.9384 0.61125 0.71991
+Residuo    42 133.19 3.1712                
+Total      48 144.82                       
+------------------------------------------------------------------------
+CV = 20.72 %
+
+------------------------------------------------------------------------
+Teste de normalidade dos residuos ( Shapiro-Wilk ) 
+Valor-p:  0.00172614 
+ATENCAO: a 5% de significancia, os residuos nao podem ser considerados normais!
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Teste de homogeneidade de variancia 
+valor-p:  0.9719832 
+De acordo com o teste de bartlett a 5% de significancia, as variancias podem ser consideradas homogeneas.
+------------------------------------------------------------------------
+
+De acordo com o teste F, as medias nao podem ser consideradas diferentes.
+------------------------------------------------------------------------
+  Niveis   Medias
+1     T1 9.010000
+2     T2 8.368095
+3     T3 8.861429
+4     T4 8.991429
+5     T5 7.625714
+6     T6 8.285714
+7     T7 9.012698
+------------------------------------------------------------------------
+
+QUANTIDADE DE FOLHA
+------------------------------------------------------------------------
+Quadro da analise de variancia
+------------------------------------------------------------------------
+           GL     SQ      QM      Fc   Pr>Fc
+Tratamento  6  1.342 0.22371 0.22456 0.96657
+Residuo    42 41.839 0.99617                
+Total      48 43.182                        
+------------------------------------------------------------------------
+CV = 18.43 %
+
+------------------------------------------------------------------------
+Teste de normalidade dos residuos ( Shapiro-Wilk ) 
+Valor-p:  0.2053446 
+De acordo com o teste de Shapiro-Wilk a 5% de significancia, os residuos podem ser considerados normais.
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Teste de homogeneidade de variancia 
+valor-p:  0.3826453 
+De acordo com o teste de bartlett a 5% de significancia, as variancias podem ser consideradas homogeneas.
+------------------------------------------------------------------------
+
+De acordo com o teste F, as medias nao podem ser consideradas diferentes.
+------------------------------------------------------------------------
+  Niveis   Medias
+1     T1 5.571429
+2     T2 5.644444
+3     T3 5.542857
+4     T4 5.385714
+5     T5 5.171429
+6     T6 5.357143
+7     T7 5.228571
+------------------------------------------------------------------------

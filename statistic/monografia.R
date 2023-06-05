@@ -1,9 +1,12 @@
 
-#Abrindo o arquivo de dados
+#Importando os dados no Linux
 dados <- read.csv("/home/kureshio/Planilhas/texto/naine-diametro.csv",header=TRUE,dec=".",sep=";")
 
+# Importando o arquivo de dados no Windows.
+dados<- read.csv("P:\\Planilhas\\texto\\gorutuba-diametro.csv",header=TRUE, sep=";", dec=".")
+
 # Obtendo as médias da váriavel dados
-medias_por_categoria <- aggregate(dados[, -1], by = list(categoria = dados[, 1]), FUN = mean)
+medias_por_categoria <- aggregate(dados[, -1], by = list(categoria = dados[, 1]), FUN = mean, na.rm=TRUE, na.action=NULL)
 
 #Há dados com informação "NA". Para realizar a estatística, não pode ter esse tipo de informação
 medias_por_categoria[7,6] <- rowMeans(medias_por_categoria[7,2:7], na.rm=T)
@@ -12,45 +15,46 @@ medias_por_categoria[7,7] <- rowMeans(medias_por_categoria[7,2:7], na.rm=T)
 # Reformatar o objeto medias_por_categoria para deixar os dados em condições de leitura para as análises. 
 # Para isso, utilizaremos o comando pivot_longer que pertence à biblioteca tidyr.
 library(tidyr)
-tabela_transformada <- pivot_longer(medias_por_categoria, cols = c("D1", "D2", "D3", "D4", "D5", "D6"), names_to = "Dimensao", values_to = "Media")
+tabela_transformada <- pivot_longer(medias_por_categoria, cols = c("R1", "R2", "R3", "R4", "R5", "R6","R7","R8"), names_to = "Dimensao", values_to = "Media")
+
+# retirando as linhas que tem valores NA
+tabela_transformada <- na.omit(tabela_transformada)
+
+# Agregando os valores em tratamento e repetição com suas médias
+tabela_media <- aggregate(tabela_transformada$Media, by = list(tabela_transformada$TRAT,tabela_transformada$Dimensao), FUN=mean)
+tabela_ordenada <- tabela_media[order(tabela_media$Group.1),]
 
 # Alterando os nomes das colunas para facilitar a vida nos próximos comandos.
+colnames(tabela_ordenada)[1] <- "Trat"
+colnames(tabela_ordenada)[2] <- "Rep"
+colnames(tabela_ordenada)[3] <- "Media"
+
 colnames(tabela_transformada)[1] <- "Trat"
 colnames(tabela_transformada)[2] <- "Rep"
 colnames(tabela_transformada)[3] <- "Media"
 
-ob_fatores<-transform(tabela_transformada, Trat=factor(Trat), Rep=factor(Rep))
-
-modCT <- aov(Media ~ Trat, data=ob_fatores)
-resmodCT <- residuals(modCT)
 
 
-# Presupostos
+# Utilizando o pacote ExpDes.pt para realizar a análise de variância.
+library(ExpDes.pt)
+dic(tabela_transformada$Trat,tabela_transformada$Media,mcomp = "sk", quali=FALSE)
 
-require(stats)
-shapiro.test(resmodCT) # Teste de normalidade Shapiro Wilk
+# Teste
+plot(data = tabela_transformada, Media ~ Trat)
 
-#### Grafico QQ-Plot
-qqnorm(ob_fatores$Media)
-qqline(ob_fatores$Media, col = 2)
+tabela_transformada$Trat <- is.factor(tabela_transformada$Trat)
 
-bartlett.test(resmodCT~Trat, data=ob_fatores) # Teste de Bartlett
+library("MASS")
+ob_lambda <- boxcox(tabela_transformada$Media ~ tabela_transformada$Trat, data=tabela_transformada, plotit=T)
+(lambda <- ob_lambda$x[which.max(ob_lambda$y)])
 
-#Teste de Média utilizando Scott-Knot
+ob_lambda <- boxcox(tabela_transformada$Media ~ tabela_transformada$Trat, data=tabela_transformada, lam=seq(-1, 1, 1/10))
 
-library(ScottKnott)
+tabela_transformada$vlrTransformado <- asin(sqrt(tabela_transformada$Media))
 
-resultado <- SK(x=modCT,wich="Trat",dispersion="st")
-resultado
+dic(tabela_transformada$Trat,tabela_transformada$vlrTransformado,mcomp = "sk", quali=FALSE)
 
+kruskal.test(tabela_transformada$Trat,tabela_transformada$Media)
 
-##dic
+wilcox.test(tabela_transformada$Media,tabela_transformada$Trat)
 
-dic(tabela_transformada$categoria,tabela_transformada$Media,mcomp = "lsd")
-
-#teste tukey
-dic(tabela_transformada$categoria,tabela_transformada$Media,mcomp = "tukey")
-
-dic(tabela_transformada$categoria,tabela_transformada$Media,mcomp = "sk")
-
-dic(tabela_transformada$categoria,tabela_transformada$Media,mcomp = "duncan")
