@@ -3,7 +3,7 @@
 dados <- read.csv("/home/kureshio/Planilhas/texto/maca-altura.csv",header=TRUE,dec=".",sep=";")
 
 # Importando o arquivo de dados no Windows.
-dados<- read.csv("P:\\Planilhas\\texto\\naine-altura.csv",header=TRUE, sep=";", dec=".")
+dados<- read.csv("P:\\Planilhas\\texto\\naine-diametro.csv",header=TRUE, sep=";", dec=".")
 
 # Obtendo as médias da váriavel dados
 medias_por_categoria <- aggregate(dados[, -1], by = list(Trat = dados[, 1]), FUN = mean, na.rm=TRUE, na.action=NULL)
