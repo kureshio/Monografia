@@ -1,6 +1,6 @@
 
 #Importando os dados no Linux
-dados <- read.csv("/home/kureshio/Planilhas/texto/maca-altura.csv",header=TRUE,dec=".",sep=";")
+dados <- read.csv("/home/kureshio/Planilhas/texto/gorutuba-diametro.csv",header=TRUE,dec=".",sep=";")
 
 # Importando o arquivo de dados no Windows.
 dados<- read.csv("P:\\Planilhas\\texto\\naine-diametro.csv",header=TRUE, sep=";", dec=".")
@@ -15,7 +15,7 @@ medias_por_categoria[7,7] <- rowMeans(medias_por_categoria[7,2:7], na.rm=T)
 # Reformatar o objeto medias_por_categoria para deixar os dados em condições de leitura para as análises. 
 # Para isso, utilizaremos o comando pivot_longer que pertence à biblioteca tidyr.
 library(tidyr)
-tabela_transformada <- pivot_longer(medias_por_categoria, cols = c("R1", "R2", "R3", "R4", "R5", "R6","R7"), names_to = "Rep", values_to = "Media")
+tabela_transformada <- pivot_longer(medias_por_categoria, cols = c("R1", "R2", "R3", "R4", "R5", "R6","R7", "R8"), names_to = "Rep", values_to = "Media")
 
 # retirando as linhas que tem valores NA
 tabela_transformada <- na.omit(tabela_transformada)
@@ -40,7 +40,6 @@ library(ExpDes.pt)
 dic(tabela_transformada$Trat ,tabela_transformada$Media,mcomp = "sk", quali=FALSE)
 
 modelo <- aov(Media ~ Trat, data = tabela_transformada)
-
 summary(modelo)
 
 tabela_transformada$Trat <- factor(tabela_transformada$Trat)
@@ -66,4 +65,5 @@ dic(tabela_transformada$Trat,tabela_transformada$vlrTransformado,mcomp = "sk", q
 kruskal.test(tabela_transformada$Trat,tabela_transformada$Media)
 
 wilcox.test(tabela_transformada$Media,tabela_transformada$Trat)
+
 
