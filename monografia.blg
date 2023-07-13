@@ -1,0 +1,91 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: monografia.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: introducao.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: referencia.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: material.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: resultado.aux
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+A level-1 auxiliary file: conclusao.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+The style file: abntex2-alf.bst
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Database file #1: abntex2-options.bib
+Database file #2: database/dados.bib
+Warning--entry type for "banana" isn't style-file defined
+--line 27 of file database/dados.bib
+Warning--entry type for "pratagorutuba1" isn't style-file defined
+--line 65 of file database/dados.bib
+Warning--entry type for "bokashi1" isn't style-file defined
+--line 79 of file database/dados.bib
+Warning--entry type for "bokashi2" isn't style-file defined
+--line 91 of file database/dados.bib
+Warning--entry type for "bokashi3" isn't style-file defined
+--line 105 of file database/dados.bib
+Warning--entry type for "Hafle2009" isn't style-file defined
+--line 159 of file database/dados.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 16 entries,
+            6714 wiz_defined-function locations,
+            1274 strings with 12334 characters,
+and the built_in function-call counts, 11802 in all, are:
+= -- 1066
+> -- 361
+< -- 43
++ -- 233
+- -- 110
+* -- 782
+:= -- 1587
+add.period$ -- 46
+call.type$ -- 17
+change.case$ -- 141
+chr.to.int$ -- 31
+cite$ -- 12
+duplicate$ -- 537
+empty$ -- 895
+format.name$ -- 529
+if$ -- 2841
+int.to.chr$ -- 3
+int.to.str$ -- 3
+missing$ -- 253
+newline$ -- 64
+num.names$ -- 56
+pop$ -- 322
+preamble$ -- 1
+purify$ -- 61
+quote$ -- 0
+skip$ -- 901
+stack$ -- 1
+substring$ -- 401
+swap$ -- 224
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 10
+warning$ -- 0
+while$ -- 80
+width$ -- 0
+write$ -- 184
+(There were 6 warnings)

@@ -1,0 +1,80 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Borges 2004]{culturabanana}
+\abntrefinfo{Borges}{BORGES}{2004}
+{BORGES, A.~L. Calagem e adubação. In:  BORGES, A.~L.; SOUZA, L. d.~S. (Ed.).
+  \textbf{O cultivo da bananeiro}. [S.l.]: Cruz das Almas, BA: Embrapa Mandioca
+  e Fruticultura, 2004. cap.~3, p. 32--44.}
+
+\bibitem[Carvalho e Rodrigues 2007]{bokashi1}
+\abntrefinfo{Carvalho e Rodrigues}{CARVALHO; RODRIGUES}{2007}
+{CARVALHO, J. O. M.~d.; RODRIGUES, C. D.~S. \textbf{Bokashi: composto
+  fermentado para a melhoria da qualidade do solo}. 2007.}
+
+\bibitem[Embrapa 2023]{banana}
+\abntrefinfo{Embrapa}{EMBRAPA}{2023}
+{EMBRAPA. \textbf{Produ{\c{c}}{\~a}o de banana}. 2023.
+  \url{http://www.cnpmf.embrapa.br/Base_de_Dados/index_xls/index_xls.htm}.
+Accessed: 02/06/2023.}
+
+\bibitem[Hafle et al. 2009]{Hafle2009}
+\abntrefinfo{Hafle et al.}{HAFLE et al.}{2009}
+{HAFLE, O.~M. et al. \textbf{PRODUÇÃO DE MUDAS DE MAMOEIRO UTILIZANDO BOKASHI
+  E LITHOTHAMNIUM 1}. 2009. 245-251~p.}
+
+\bibitem[iloveflores 2023]{bokashi2}
+\abntrefinfo{iloveflores}{ILOVEFLORES}{2023}
+{ILOVEFLORES. \textbf{Bokashi: Nutrindo Sistemas de Permacultura}. 2023.
+  \url{https://iloveflores.com/bokashi-em-sistemas-de-permacultura/}.
+Acessado: 18/06/2023.}
+
+\bibitem[Jesus et al. 2015]{pratagorutuba1}
+\abntrefinfo{Jesus et al.}{JESUS et al.}{2015}
+{JESUS, M. O.~D. et al. \textbf{CARACTERIZAÇÃO DA 'BANANA PRATA GORUTUBA'
+  PRODUZIDA NO NORTE DE MINAS GERAIS, NO ESTÁDIO 2 DE MATURAÇÃO}. 2015.
+Dispon{\'\i}vel em: \url{http://faostat.fao.org/site567s}.}
+
+\bibitem[MATSUURA, COSTA e FOLEGATTI 2004]{MATSUURA2004}
+\abntrefinfo{MATSUURA, COSTA e FOLEGATTI}{MATSUURA; COSTA; FOLEGATTI}{2004}
+{MATSUURA, F. C. A.~U.; COSTA, J. I. P.~D.; FOLEGATTI, M. I. D.~S. Marketing de
+  banana: PreferÊncias do consumidor quanto aos atributos de qualidade dos
+  frutos.
+\textbf{Revista Brasileira de Fruticultura}, p. 48--52, 4 2004.}
+
+\bibitem[Nogueira et al. 2013]{nogueira2013bananicultura}
+\abntrefinfo{Nogueira et al.}{NOGUEIRA et al.}{2013}
+{NOGUEIRA, S. et al. Bananicultura acriana: situa{\c{c}}{\~a}o atual e
+  desafios.
+Rio Branco, AC: Embrapa Acre, 2013., 2013.}
+
+\bibitem[NOMURA et al. 2020]{cultivodebananeira}
+\abntrefinfo{NOMURA et al.}{NOMURA et al.}{2020}
+{NOMURA, E.~S. et al. \textbf{Cultivo de Bananeira}. 2. ed. [S.l.: s.n.],
+  2020.}
+
+\bibitem[Oliveira et al. 2014]{bokashi3}
+\abntrefinfo{Oliveira et al.}{OLIVEIRA et al.}{2014}
+{OLIVEIRA, E. A. G.~d. et al. \textbf{Compostos orgânicos fermentados tipo
+  “bokashi” obtidos com diferentes materiais de origem vegetal e diferentes
+  formas de inoculação visando sua utilização no cultivo de hortaliças}.
+  2014.}
+
+\bibitem[Rocha 2008]{rocha2008epidemiologia}
+\abntrefinfo{Rocha}{ROCHA}{2008}
+{ROCHA, H.~S. Epidemiologia da sigatoka amarela, quantifica{\c{c}}{\~a}o de
+  fen{\'o}is em variedades de bananeiras e an{\'a}lise filogen{\'e}tica de
+  isolados de mycosphaerella musicola utilizando microssat{\'e}lites.
+\textbf{Mycosphaerella musicola}, 2008.}
+
+\bibitem[Taxonomy and Origins of Cultivated Bananas 1956]{1956TaOo}
+\abntrefinfo{Taxonomy\ldots}{TAXONOMY\ldots}{1956}
+{TAXONOMY and Origins of Cultivated Bananas.
+\textbf{Nature (London)}, v.~177, n.~4520, p. 1111--1111, 1956.
+ISSN 0028-0836.}
+
+\end{thebibliography}

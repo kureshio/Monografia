@@ -3,7 +3,7 @@
 dados <- read.csv("/home/kureshio/Planilhas/texto/gorutuba-diametro.csv",header=TRUE,dec=".",sep=";")
 
 # Importando o arquivo de dados no Windows.
-dados<- read.csv("P:\\Planilhas\\texto\\naine-diametro.csv",header=TRUE, sep=";", dec=".")
+dados<- read.csv("P:\\Planilhas\\texto\\gorutuba-altura.csv",header=TRUE, sep=";", dec=".")
 
 # Obtendo as médias da váriavel dados
 medias_por_categoria <- aggregate(dados[, -1], by = list(Trat = dados[, 1]), FUN = mean, na.rm=TRUE, na.action=NULL)
@@ -37,12 +37,13 @@ colnames(tabela_transformada)[3] <- "Media"
 
 # Utilizando o pacote ExpDes.pt para realizar a análise de variância.
 library(ExpDes.pt)
-dic(tabela_transformada$Trat ,tabela_transformada$Media,mcomp = "sk", quali=FALSE)
-
-modelo <- aov(Media ~ Trat, data = tabela_transformada)
-summary(modelo)
+dic(tabela_transformada$Trat ,tabela_transformada$Media2,mcomp = "tukey", quali=FALSE)
 
 tabela_transformada$Trat <- factor(tabela_transformada$Trat)
+modelo <- aov(Media2 ~ Trat, data = tabela_transformada)
+summary(modelo)
+
+
 
 sapply(tabela_transformada, summary)
 
