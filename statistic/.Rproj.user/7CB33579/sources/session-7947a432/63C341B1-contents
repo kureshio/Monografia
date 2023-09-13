@@ -1,0 +1,17 @@
+# Transformação logarítmica
+tabela_transformada$Media2 <- log(tabela_transformada$Media)
+tabela_transformada$Media2 <- sqrt(tabela_transformada$Media)
+tabela_transformada$Media2 <- 1/tabela_transformada$Media
+
+#Transformação de Box-Cox
+# Carregar o pacote MASS
+library(MASS)
+
+# Ajustar um modelo linear aos dados
+lm <- lm(Media ~ Trat, data = tabela_transformada)
+
+# Realizar a transformação de Box-Cox
+boxcox(lm)
+
+tabela_transformada$Media2 <- (tabela_transformada$Media^(0.5) - 1) /0.1
+
