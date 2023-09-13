@@ -1,1 +1,0 @@
-O resultado do teste de Shapiro-wilk foi que os resíduos dos dados não segue uma distribuição normal. P-value = 5.064e-08.

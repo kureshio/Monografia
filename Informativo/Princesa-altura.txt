@@ -1,1 +1,0 @@
-Foi realizado transformação box-cox, pois não houve homogeneidade das variancias
